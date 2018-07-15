@@ -179,6 +179,8 @@ public class WebDriverServiceImpl extends WebDriverListener implements WebDriver
 
 	public void dismissAlert() {
 		// TODO Auto-generated method stub
+		Alert alert=driver.switchTo().alert();
+		alert.dismiss();
 		
 	}
 
