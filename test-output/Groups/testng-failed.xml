@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Groups]">
+  <test thread-count="5" name="Leads(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <include name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.DeleteLead">
+        <methods>
+          <include name="deletingLead"/>
+        </methods>
+      </class> <!-- tests.DeleteLead -->
+    </classes>
+  </test> <!-- Leads(failed) -->
+</suite> <!-- Failed suite [Groups] -->

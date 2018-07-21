@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Annotations">
+  <test name="Leads">
+    <classes>
+      <class name="tests.EditLead"/>
+      <class name="tests.DuplicateLead"/>
+      <class name="tests.CreateLead"/>
+      <class name="tests.DeleteLead"/>
+    </classes>
+  </test> <!-- Leads -->
+</suite> <!-- Annotations -->

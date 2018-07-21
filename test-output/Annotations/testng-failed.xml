@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Annotations]">
+  <test thread-count="5" name="Leads(failed)">
+    <classes>
+      <class name="tests.EditLead">
+        <methods>
+          <include name="afterClass"/>
+          <include name="editLead"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.EditLead -->
+      <class name="tests.CreateLead">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="createLead"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.CreateLead -->
+      <class name="tests.DeleteLead">
+        <methods>
+          <include name="deletingLead"/>
+        </methods>
+      </class> <!-- tests.DeleteLead -->
+    </classes>
+  </test> <!-- Leads(failed) -->
+</suite> <!-- Failed suite [Annotations] -->

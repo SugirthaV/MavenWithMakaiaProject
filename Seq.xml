@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestLeaf">
+  <test thread-count="5" name="Leads">
+    <classes>
+      <class name="tests.EditLead"/>
+      <class name="tests.CreateLead"/>
+    </classes>
+  </test> <!-- Leads -->
+</suite> <!-- TestLeaf -->
