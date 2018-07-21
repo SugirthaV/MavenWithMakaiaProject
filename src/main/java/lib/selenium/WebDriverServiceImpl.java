@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Set;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.InvalidElementStateException;
 import org.openqa.selenium.Keys;
@@ -171,12 +172,15 @@ public class WebDriverServiceImpl extends WebDriverListener implements WebDriver
 	}
 
 	public void acceptAlert() {
-		// TODO Auto-generated method stub
+		Alert alert=driver.switchTo().alert();
+		alert.accept();
 		
 	}
 
 	public void dismissAlert() {
 		// TODO Auto-generated method stub
+		Alert alert=driver.switchTo().alert();
+		alert.dismiss();
 		
 	}
 
